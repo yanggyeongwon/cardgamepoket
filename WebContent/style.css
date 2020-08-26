@@ -1,0 +1,155 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, span {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+ 	
+	font-family: 'Black Han Sans', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+
+	font-family: 'Black Han Sans', sans-serif;
+}
+body {
+	cursor: url(images_num/meta.png), auto;
+    line-height: 1;
+	font-size: 16px;
+	width: 100%;
+	height: 837px;
+	font-family: 'Black Han Sans', sans-serif;
+}
+
+ol, ul {
+	list-style: none;
+	font-family: 'Black Han Sans', sans-serif;
+}
+blockquote, q {
+	quotes: none;
+}
+input {border:0;}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input			{border: 0; background-color: transparent !important;font-family: 'Do Hyeon', sans-serif;}
+a				{text-decoration: none; color: black;cursor: url(images_num/meta.png), auto;}
+header			{width: 100%;height: 50px;}
+section			{width: 100%; height: 937px;position:relative;overflow:hidden;}
+
+
+#tree1			{position:absolute;bottom:-1%;left:0;z-index:2}
+#tree2			{position:absolute;bottom:-1%;right:0;z-index:2}
+
+#tree_center	{position: absolute; bottom: -22.5%; z-index: -1; left: -5%;width: 120%;}
+#tree_center img{width:100%}
+#sun			{position:absolute; top:0; right:0}
+
+#gora			{position: absolute; bottom:0; left: 10%; transform: rotate(25deg);z-index: 1;width: 20%;}
+#gora img		{width:100%;}
+
+#yadon			{position: absolute; bottom:0; right: 10%; transform: rotate(-25deg);z-index: 1;width: 20%;}
+#yadon img		{width:100%;}
+
+#moon			{position:absolute;top:0; right:0; width:400px;}
+#moon img		{width:100%;}
+
+
+
+
+.bar_choice		{width: 50%;margin: 50px auto;position: relative; overflow: hidden; padding-top:20px}
+.bar_choice ul	{text-align:center;}
+.bar_choice li:nth-child(2){margin-top:70px;}
+.bar_choice li:nth-child(3){margin-top:70px;}
+.bar_choice li:nth-child(4){margin-top:50px;}
+.bar_choice li:nth-child(4) img{width:50% }
+.bar_choice li img:hover		{animation: btnsize .5s forwards}
+@keyframes btnsize{
+	0%{}
+	100%{transform:scale(1.1);}
+}
+
+.bar_choice img	{width:70%;}
+.bar_choice a	{cursor: url(images_num/meta.png), auto;}
+
+
+#rank			{width: 100%;}
+#rank img		{width:25%}
+#rank p			{text-align: center;}
+
+.time			{width: 100%;height: 70px;}
+.time p			{text-align: center; color: #000; width: 200px; margin: 0 auto; font-size:3rem}
+
+.mode			{float: right;  height: 50px;}
+.mode em		{color:#000; font-size:5rem}
+
+#cardpack		{width: 1500px; height: 650px;margin: 0 auto;}
+#cardpack ul	{display: flex; flex-direction: row; flex-wrap: wrap;  margin: 0 auto;}
+#cardpack img	{width:150px;}
+
+.packs		{display: flex;}
+.packs li	{margin: 10px;background: #000;}
+.packs img	{width:100px;}
+
+#timeover	{background: red; width: 350px; height: 200px;margin: 0 auto;margin-top: 300px;}
+#timeover p	{text-align: center;padding-top: 50px;}
+
+#btn_all	{width: 80%; margin: 0 auto;text-align: center;margin-top: 50px;}
+
+.rank_list 	{width: 50%;margin: 0 auto;margin-top: 100px;height: 600px;border: 1px solid #000;}
+.rank_lisk_ul{display: flex;font-size: 2rem;text-align: center;}
+.rank_list li{float: left; margin: 20px auto; width: 200px;text-align: center;}
+
+#rank_input input	{height:50px; font-size:1.5rem}
+#rank_input button	{height:30px; font-size:1rem ;background-color: transparent !important;cursor: url(images_num/meta.png), auto;}
+
+#rankpage 		{width:78%; margin:0 auto;position:relative;overflow:hidden;text-align:center;}
+#rankpage img	{width:95%;margin-top:-7%}
+
+#returnbtn		{width:20%;position:absolute; bottom:-70px; left:52%;transform:translate(-50%,-50%);}
+#returnbtn img	{width:100%;}
+#returnbtn img:hover{animation:btnsize .5s forwards;cursor: url(images_num/meta.png), auto;}
+
+
+.rank_lists{position:absolute;top:27% ;left:33% ;z-index:999;}
+.rank_lists input[type='text']{height: 50px; font-size: 2em;vertical-align: top;}
+.rank_lists span{font-size:3rem;}
+
+#lists1{top:42%;}
+#lists2{top:58%;}
+#lists3{top:73%;}
+
+#rank_input		{width:50%; margin: 0 auto;font-size: 2rem;text-align: center;margin-top: 20px;}
+#rank_input span{margin-right: 20px;}
+
+input[type="text"]{height: 20px;vertical-align: middle;}
+input[type="submit"]{font-family: 'Black Han Sans', sans-serif;height: 30px;vertical-align: middle; width: 50px;font-size: 1rem;}
+
+#maping		{margin:0 auto}
+
+#loding		{width:100%; height:100%;top: 0px; left: 0px;position: fixed; display: block; background-color: #fff; z-index: 99; text-align: center;}
+#loding img {position: absolute; top: 50%; left: 50%; z-index: 100;}
+
+.show{display:block};
+.hide{display:none};
