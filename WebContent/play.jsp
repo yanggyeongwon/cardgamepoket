@@ -41,15 +41,15 @@
 		var printCnt = document.getElementById("cardpack");
 		
 		var current = 0;
-		var canFlip = true;
-		var total = 0;
-		var isExit = true;
-		var cardNum;
+		var canFlip = true; //카드 비교 하기 위한 boolen
+		var total = 0; //게임 종료를 위한 갯수 카운트 
+		 
+		var cardNum; //
 		var Real;
 		var Back;
 		var clear;
 		var arrylen;
-		
+		var pair = new Array(2);
 		
 		if(<%=arry%> == 4){
 			cardNum = new Array(16);//16//30
@@ -75,7 +75,7 @@
 			Real[i] = 0;
 
 		}
-		var pair = new Array(2);
+		
 		
 		for(var i=0; i<clear.length;i++){
 			clear[i] = false;
@@ -230,7 +230,7 @@
                         // 게임 종료
                         if (total >= arrylen){  // 다 뒤집으면 게임 끝
                         	
-                            isExit = true;  // 종료 시작 
+                            
                             
                             
                            	window.open("ranking_inputs.jsp?tm="+tm+"&ts="+ts+"&emtex="+emtex,'window팝업','top='+popy+', left='+popx+', width=600, height=180, menubar=no, status=no, toolbar=no')
@@ -269,11 +269,6 @@
                     }, 500);
                 }
             }
-        }
-        
-        // 게임 재시작
-        function restart() {  // 재실행
-            window.location.reload(true);
         }
         </script>
         

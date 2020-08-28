@@ -132,7 +132,7 @@ section			{width: 100%; height: 937px;position:relative;overflow:hidden;}
 #returnbtn img:hover{animation:btnsize .5s forwards;cursor: url(images_num/meta.png), auto;}
 
 
-.rank_lists{position:absolute;top:27% ;left:33% ;z-index:999;}
+.rank_lists{position:absolute;top:20% ;left:30% ;z-index:999;}
 .rank_lists input[type='text']{height: 50px; font-size: 2em;vertical-align: top;}
 .rank_lists span{font-size:3rem;}
 
