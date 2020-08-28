@@ -40,27 +40,26 @@
    
 		var printCnt = document.getElementById("cardpack");
 		
-		var current = 0;
+		var current = 0; //pair 카드 비교 배열 변수로 들감
 		var canFlip = true; //카드 비교 하기 위한 boolen
-		var total = 0; //게임 종료를 위한 갯수 카운트 
-		 
-		var cardNum; //
-		var Real;
-		var Back;
-		var clear;
-		var arrylen;
+		var total = 0; //게임 종료를 위한 갯수 카운트 		 
+		var cardNum; //카드 갯수
+		var Real; // 카드 랜덤 변수
+		var Back; // 뒷면 카드 변수  
+		var clear; //카드 종료 하기 위한 boolen
+		var arrylen; // 카드 종료 변수, 뒷면 생성
 		var pair = new Array(2);
 		
 		if(<%=arry%> == 4){
 			cardNum = new Array(16);//16//30
-			Real = new Array(8);//8//15
+			Real = new Array(8);//8//16
 			Back = new Array(16);//16
 			clear = new Array(16);
 			arrylen =16;
 		}else if(<%=arry%> == 5){
-			cardNum = new Array(20);//16//30
-			Real = new Array(10);//8//15
-			Back = new Array(20);//16
+			cardNum = new Array(20);
+			Real = new Array(10);
+			Back = new Array(20);
 			clear = new Array(20);
 			arrylen = 20;
 		}else if(<%=arry%> == 7){
@@ -73,10 +72,8 @@
 		
 		for(var i=0; i< Real.length;i++){
 			Real[i] = 0;
-
 		}
-		
-		
+				
 		for(var i=0; i<clear.length;i++){
 			clear[i] = false;
 		}
@@ -148,9 +145,9 @@
              console.log("random: "+Random())
         	 var tmp = Random();
 
-             while (Real[tmp-1] >= 2) {
+             while (Real[tmp-1] >= 2) {// random값 카드 랜덤 숫자를  맞추기 ㅇ위해 -1
                  tmp = Random();
-                 //console.log(Random());
+                 console.log(tmp);
              }
 
              cardNum[i] = tmp;
