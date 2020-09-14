@@ -1,0 +1,22 @@
+
+drop sequence cardsqe;
+create sequence cardsqe
+  increment by 1
+  start with 1
+  minvalue 1
+  maxvalue 10000
+  nocache;
+
+
+drop table cardplay;
+
+create table cardplay( 
+	rank_tab number primary key,
+	name_tab varchar2(20) not null,
+	ts_tab number not null,
+	tm_tab number not null,
+	modes varchar2(20) not null
+);
+
+
+
